@@ -1,0 +1,324 @@
+<!doctype html>
+                        <html>
+                            <head>
+                                <meta charset='utf-8'>
+                                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                                <title>Snippet - GoSNippets</title>
+                                <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+                                <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
+                                <style>@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: #eee;
+    height: 10vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to top, #fff 10%, rgba(93, 42, 141, 0.4) 90%) no-repeat
+}
+
+.wrapper {
+    max-width: 1000px;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 5px 40px;
+    box-shadow: 100px 20px 80px rgb(206, 206, 206)
+}
+
+.h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #ce088f;
+    font-style: italic
+}
+
+.h4 {
+    font-family: 'Poppins', sans-serif
+}
+
+.input-field {
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ce088f;
+    color: #ce088f
+}
+
+.input-field:hover {
+    color: #ce088f;
+    border: 1px solid #ce088f
+}
+
+input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    padding: 0px 2px;
+    font-family: 'Poppins', sans-serif
+}
+
+.fa-eye-slash.btn {
+    border: none;
+    outline: none;
+    box-shadow: none
+}
+
+a {
+    text-decoration: none;
+    color: #ce088f;
+    font-weight: 50
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ce088f
+}
+
+.option {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer
+}
+
+.option label.text-muted {
+    display: block;
+    cursor: pointer
+}
+
+.option input {
+    display: none
+}
+
+.checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer
+}
+
+.option input:checked~.checkmark:after {
+    display: block
+}
+
+.option .checkmark:after {
+    content: "";
+    width: 13px;
+    height: 13px;
+    display: block;
+    background: #ce088f;
+    position: absolute;
+    top: 48%;
+    left: 53%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 300ms ease-in-out 0s
+}
+
+.option input[type="radio"]:checked~.checkmark {
+    background: #fff;
+    transition: 300ms ease-in-out 0s;
+    border: 1px solid #ce088f
+}
+
+.option input[type="radio"]:checked~.checkmark:after {
+    transform: translate(-50%, -50%) scale(1)
+}
+
+.btn.btn-block {
+    border-radius: 20px;
+    background-color: #ce088f;
+    color: #fff
+}
+
+.btn.btn-block:hover {
+    background-color: #ce088f
+}
+
+@media(max-width: 575px) {
+    .wrapper {
+        margin: 10px
+    }
+}
+
+@media(max-width:424px) {
+    .wrapper {
+        padding: 30px 10px;
+        margin: 5px
+    }
+
+    .option {
+        position: relative;
+        padding-left: 22px
+    }
+
+    .option label.text-muted {
+        font-size: 0.95rem
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 2px
+    }
+
+    .option .checkmark:after {
+        top: 50%
+    }
+
+    #forgot {
+        font-size: 0.95rem
+    }
+}</style>
+
+
+                                <script type='text/javascript' src=''></script>
+                                <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+                                <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+                            </head>
+                            <body oncontextmenu='return false' class='snippet-body'>
+                            <div class="wrapper bg-white">
+                              
+<body>
+
+  <img src="./img/Amicar - carona amiga escolar - logo.png"
+    width="auto"
+    height="200px">
+    
+
+
+  <div class="h2 text-center">Cadastro</div>
+
+  <div class="container">
+        <form>
+          <div class="pt-3">
+            <label for="input-field">Atuação</label>
+            <select id="input-field" class="form-control">
+              <option selected>Opções</option>
+              <option>Quero dar carona</option>
+              <option>Quero pegar carona</option>
+              <option>Quero apoiar o projeto</option>
+                       
+            </select>
+          </div>
+
+            <div class="form-row">
+              <div class="pt-3">
+                <label for="inputEmail4">Nome Completo</label>
+                <input type="Nome" class="form-control" id="inputEmail4" placeholder="Nome">
+              </div>
+              
+              <div class="pt-3">
+                <label for="inputAddress">Endereço Completo</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0, Apartamento, hotel, casa, etc.">
+              </div>
+
+              <div class="form-row">
+                <div class="pt-3">
+                  <label for="inputCity">Documentação</label>
+                  <input type="text" class="form-control" id="inputCity" placeholder="RG">
+                  <input type="text" class="form-control" id="inputCity" placeholder="CPF">
+                </div>
+
+              <div class="pt-3">
+                <label for="inputAddress2">Pai/Mãe do Aluno</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Nome do Aluno">
+              </div>
+
+              <div class="pt-3">
+                <label for="inputAddress2">Número da Matrícula do Filho</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Número da Matrícula">
+              </div>
+
+              <div class="pt-3">
+                <label for="input-field">Nome da Escola do Filho</label>
+                <select id="input-field" class="form-control">
+                  <option selected>Nome da escola do Filho</option>
+                  <option>Escola Fazer Crescer</option>
+                  <option>Escola Marista </option>
+                  <option>Escola Vera Cruz </option>              
+                  </select>
+              </div>
+            
+              <div class="pt-3">
+                <label for="input-field">Dias da semana</label>
+                <select id="input-field" class="form-control">
+                  <option selected>Dia da semana</option>
+                  <option>segunda</option>
+                  <option>terça</option>
+                  <option>quarta</option>
+                  <option>quinta</option>
+                  <option>sexta</option>
+                  </select>
+              </div>
+              <div class="pt-3">
+                <label for="input-field">Horários</label>
+                <select id="input-field" class="form-control">
+                  <option selected>Horários</option>
+                  <option>07h</option>
+                  <option>12h</option>
+                  <option>17h</option>
+                           
+                </select>
+              </div>
+
+
+            <div class="pt-3">
+              <label for="week">Mais de uma dia na Semanal (Caso tenha disponibilidade em mais de um dia de semana)</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="segunda, terça, quarta, quinta, sexta">
+            </div>
+            
+            <div class="pt-3">
+              <label for="inputAddress2">Login</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Login">
+            </div>
+
+            <div class="pt-3">
+              <label for="inputAddress2">Senha</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Senha">
+            </div>
+              
+            <br>
+            
+              <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+
+                  <h1>
+
+                  </h1>
+                  
+                  Li e aceito os termos e condições para participar da Comunidade Carona Amiga.
+
+                </label>
+              </div>
+            </div>
+            <ul class="nav nav-justified" id="ex1" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="login.html" role="tab"
+               aria-controls="pills-login" aria-selected="true"><div class="d-grid gap-2">
+              <button class="btn btn-secondary" type="button">Cadastrar</button>
+               </div></a>
+              </li>
+           </ul>
+                                           
+            <div class="text-center pt-3 text-muted">Já tem cadastro? <a href="login.html">Clique aqui</a></div>
+            <div class="text-center pt-3 text-muted"> <a href="index.html">Voltar para o Menu inicial</a></div>
+          </form>
+
+    </div>
+
+</body>
+</html>
